@@ -20,7 +20,7 @@ export const Hero: React.FC = () => {
       <div className="grid lg:grid-cols-2 gap-16 items-center">
         <div className="space-y-8">
           <h1 className="text-5xl md:text-6xl font-medium tracking-tight text-black leading-[1.1]">
-            The AI platform for health economics and outcomes research (HEOR) evidence reviews
+            The AI platform for Health Economics and Outcomes Research (HEOR) evidence reviews
           </h1>
           <p className="text-xl text-black/70 leading-relaxed max-w-lg">
             OpenOutcomesResearch helps evidence teams turn published clinical literature into structured, reviewable data for faster screening, extraction, and analysis.
