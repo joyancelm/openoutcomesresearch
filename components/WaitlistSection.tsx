@@ -68,11 +68,10 @@ export const WaitlistSection: React.FC = () => {
     <section id="waitlist" className="py-24 bg-black rounded-2xl text-center px-6">
       <div className="max-w-2xl mx-auto space-y-8">
         <h2 className="text-3xl md:text-4xl font-semibold text-white tracking-tight">
-          Defensible evidence, <br/>
-          <span className="text-blue-500">delivered at speed.</span>
+          Get priority access to faster literature reviews
         </h2>
         <p className="text-gray-400 text-lg font-light">
-          Designed for Evidence Synthesis Consultancies and Pharma Market Access.
+          Built for academic clinical researchers and CRO/pharma evidence teams.
         </p>
 
         {success ? (
@@ -124,13 +123,13 @@ export const WaitlistSection: React.FC = () => {
               disabled={loading}
               className="w-full bg-white text-black font-medium px-6 py-3 rounded-lg hover:bg-gray-200 transition-all disabled:opacity-50 active:scale-95 shadow-sm hover:shadow-lg mt-2"
             >
-              {loading ? "Processing..." : "Request Pilot"}
+              {loading ? "Processing..." : "Join Waitlist"}
             </button>
           </form>
         )}
         
         <div className="text-xs text-gray-600 mt-8">
-          SOC2 Compliant & ISO 27001 Certified
+          Configurable controls for regulated research workflows.
         </div>
       </div>
     </section>

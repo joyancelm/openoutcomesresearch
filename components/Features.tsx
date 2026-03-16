@@ -6,17 +6,17 @@ export const ValueProps: React.FC = () => {
     {
       icon: <Settings size={20} />,
       title: "Bring Your Own Model",
-      desc: "Seamlessly integrate with your institution's proprietary AI models and tailor the extraction pipeline to match your specific research protocols."
+      desc: "Integrate institutional or proprietary models into the workflow to align with internal AI strategy, governance, and performance requirements."
     },
     {
       icon: <Sliders size={20} />,
       title: "Screening Threshold Control",
-      desc: "Configure custom sensitivity and specificity thresholds for AI screening, complete with detailed explanations to boost performance and auditability."
+      desc: "Adjust screening sensitivity and specificity to match study volume, reviewer capacity, and methodological priorities."
     },
     {
       icon: <Database size={20} />,
       title: "Custom Ontology Mapping",
-      desc: "Map extracted data directly to your organization's specific controlled vocabularies and data dictionaries for seamless downstream integration."
+      desc: "Map extracted outputs to internal taxonomies, controlled vocabularies, and downstream evidence systems."
     }
   ];
 
@@ -24,10 +24,10 @@ export const ValueProps: React.FC = () => {
     <div className="space-y-10">
       <div className="max-w-3xl space-y-4">
         <h2 className="text-3xl md:text-4xl font-medium tracking-tight">
-          Advanced control for enterprise teams
+          Enterprise control for rigorous evidence workflows
         </h2>
         <p className="text-lg text-black/70 leading-relaxed">
-          Beyond standard extraction, OpenOutcomesResearch gives you the tools to align the platform with your institution's specific technical and methodological requirements.
+          OpenOutcomesResearch is designed for organizations that need more than generic artificial intelligence (AI) outputs. It provides the flexibility, control, and traceability required for governed research and evidence review environments.
         </p>
       </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

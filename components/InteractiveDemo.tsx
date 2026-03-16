@@ -13,10 +13,10 @@ export const InteractiveDemo: React.FC = () => {
     <section id="demo" className="px-6 max-w-7xl mx-auto space-y-12">
       <div className="space-y-6 max-w-3xl text-center mx-auto">
         <h2 className="text-3xl md:text-4xl font-medium tracking-tight">
-          Experience the HEOR AI research platform workflow
+          See the literature review workflow in action
         </h2>
         <p className="text-lg text-black/70 leading-relaxed">
-          Try our interactive demo to see how OpenOutcomesResearch transforms unstructured literature into structured, reviewable evidence for Health Economics and Outcomes Research (HEOR).
+          Explore how OpenOutcomesResearch turns unstructured papers into organized, source-linked study data to uncover trends and evidence gaps.
         </p>
       </div>
 

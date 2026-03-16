@@ -37,10 +37,10 @@ export const Navbar: React.FC = () => {
         
         <div className="flex items-center gap-6 md:gap-8">
           <div className="hidden md:flex items-center gap-6">
-            <button type="button" onClick={() => goToSection('demo')} className="text-sm font-medium text-black/60 hover:text-black transition-colors">Product</button>
+            <button type="button" onClick={() => goToSection('demo')} className="text-sm font-medium text-black/60 hover:text-black transition-colors">Platform</button>
             <button type="button" onClick={() => goToSection('use-cases')} className="text-sm font-medium text-black/60 hover:text-black transition-colors">Use Cases</button>
             <button type="button" onClick={() => goToSection('how-it-works')} className="text-sm font-medium text-black/60 hover:text-black transition-colors">How It Works</button>
-            <Link to="/about" className="text-sm font-medium text-black/60 hover:text-black transition-colors">About Us</Link>
+            <Link to="/about" className="text-sm font-medium text-black/60 hover:text-black transition-colors">About</Link>
           </div>
           <button type="button" onClick={openDemoModal} className="text-sm font-medium text-white bg-black hover:bg-black/80 px-4 py-2 rounded-full transition-all">
             Request a Demo

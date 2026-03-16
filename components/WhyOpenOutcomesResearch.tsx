@@ -6,10 +6,10 @@ export const WhyOpenOutcomesResearch: React.FC = () => {
     <section className="px-6 max-w-6xl mx-auto space-y-12">
       <div className="space-y-6 max-w-3xl">
         <h2 className="text-3xl md:text-4xl font-medium tracking-tight">
-          The AI Research Platform for HEOR: Designed for rigorous evidence synthesis
+            Built for evidence review, not generic AI chat
         </h2>
         <p className="text-lg text-black/70 leading-relaxed">
-          Generic AI tools can help summarize text, but Health Economics and Outcomes Research (HEOR) and evidence teams need more than a summary. They need an AI research platform with robust data analytics, structured outputs, a clearer review workflow, and a way to connect extracted information back to the original source.
+            General-purpose AI tools can summarize text, but evidence teams need structured outputs, traceable workflows, and a reliable link back to the original source. OpenOutcomesResearch is designed for how literature is actually screened, extracted, reviewed, and analyzed in health economics and outcomes research (HEOR), evidence synthesis, and enterprise research settings.
         </p>
       </div>
       
@@ -20,19 +20,19 @@ export const WhyOpenOutcomesResearch: React.FC = () => {
             <ul className="space-y-6">
               <li className="flex gap-4 text-black/60">
                 <X className="w-6 h-6 shrink-0 text-black/40" />
-                <span>Narrative summaries that are hard to compare across studies</span>
+                   <span>Narrative summaries that are difficult to compare across studies</span>
               </li>
               <li className="flex gap-4 text-black/60">
                 <X className="w-6 h-6 shrink-0 text-black/40" />
-                <span>Black-box answers without clear links to the source text</span>
+                   <span>Limited traceability from outputs back to source text</span>
               </li>
               <li className="flex gap-4 text-black/60">
                 <X className="w-6 h-6 shrink-0 text-black/40" />
-                <span>Misses nuanced endpoints, subgroups, and evidence gaps</span>
+                   <span>Often miss nuanced endpoints, subgroups, and evidence gaps</span>
               </li>
               <li className="flex gap-4 text-black/60">
                 <X className="w-6 h-6 shrink-0 text-black/40" />
-                <span>Requires constant prompt engineering and validation</span>
+                   <span>Depend on repeated prompt engineering and manual revalidation</span>
               </li>
             </ul>
           </div>
@@ -41,19 +41,19 @@ export const WhyOpenOutcomesResearch: React.FC = () => {
             <ul className="space-y-6">
               <li className="flex gap-4">
                 <Check className="w-6 h-6 shrink-0 text-white/60" />
-                <span>Structured study-level data outputs (PICO, endpoints, etc.) for data analytics</span>
+                   <span>Structured study-level outputs for analysis, review, and downstream reuse</span>
               </li>
               <li className="flex gap-4">
                 <Check className="w-6 h-6 shrink-0 text-white/60" />
-                <span>Every extracted data point is linked directly to the source text</span>
+                   <span>Every extracted field linked directly to source context</span>
               </li>
               <li className="flex gap-4">
                 <Check className="w-6 h-6 shrink-0 text-white/60" />
-                <span>Surfaces underreported areas, inconsistent findings, and blind spots</span>
+                   <span>Designed to surface underreported areas, inconsistencies, and blind spots</span>
               </li>
               <li className="flex gap-4">
                 <Check className="w-6 h-6 shrink-0 text-white/60" />
-                <span>Built specifically for how HEOR and evidence teams review and analyze literature</span>
+                   <span>Purpose-built for evidence workflows in health economics and outcomes research (HEOR), contract research organizations (CROs), pharma, and academic research</span>
               </li>
             </ul>
           </div>

@@ -6,10 +6,10 @@ export const Problem: React.FC = () => {
     <section className="px-6 max-w-6xl mx-auto space-y-12">
       <div className="space-y-6 max-w-3xl">
         <h2 className="text-3xl md:text-4xl font-medium tracking-tight">
-          The volume of literature keeps growing. Evidence synthesis and data analytics still take too much manual work.
+          The literature is expanding faster than evidence teams can process it
         </h2>
         <p className="text-lg text-black/70 leading-relaxed">
-          HEOR and research teams are expected to keep up with a growing body of published evidence across clinical studies, outcomes research, and review literature. But the key details are often buried in unstructured papers, making it difficult to compare studies, track findings, and surface what is still missing.
+          Health economics and outcomes research (HEOR), clinical, and evidence teams are expected to keep up with a growing volume of published studies. But key findings are often buried in PDFs, abstracts, and inconsistent reporting formats. That slows systematic literature reviews, complicates evidence extraction, and makes it harder to compare findings, identify trends, and see where evidence is still missing.
         </p>
       </div>
       
@@ -25,14 +25,14 @@ export const Problem: React.FC = () => {
           <FileText className="w-6 h-6 text-black" strokeWidth={1.5} />
           <h3 className="font-semibold text-lg">Too little structure</h3>
           <p className="text-black/60 leading-relaxed">
-            Important study details for data analytics often remain trapped in PDFs, abstracts, and inconsistent reporting formats.
+            Critical study details are scattered across publications and reported in inconsistent ways.
           </p>
         </div>
         <div className="p-8 border border-black/10 rounded-3xl space-y-5 bg-white shadow-sm">
           <ShieldAlert className="w-6 h-6 text-black" strokeWidth={1.5} />
           <h3 className="font-semibold text-lg">Too hard to trust generic AI</h3>
           <p className="text-black/60 leading-relaxed">
-            AI summaries alone are not enough when HEOR teams need traceable outputs they can review and verify.
+            Enterprise teams need reviewable, source-linked outputs, not black-box summaries.
           </p>
         </div>
       </div>

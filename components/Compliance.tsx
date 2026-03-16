@@ -7,13 +7,13 @@ export const Compliance: React.FC = () => {
       <div className="space-y-6 max-w-3xl">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black/5 border border-black/10 text-sm font-medium text-black/70">
           <ShieldCheck className="w-4 h-4" />
-          21 CFR Part 11 Ready
+          Designed to support 21 CFR Part 11-aligned workflows
         </div>
         <h2 className="text-3xl md:text-4xl font-medium tracking-tight">
-          Built for governed HEOR review workflows
+          Built for traceable, governed review workflows
         </h2>
         <p className="text-lg text-black/70 leading-relaxed">
-          OpenOutcomesResearch is being developed to support 21 CFR Part 11 requirements for traceable electronic records, audit trails, and governed review workflows.
+          OpenOutcomesResearch supports configurable controls for audit-friendly electronic records, workflow governance, and review traceability in regulated research environments.
         </p>
       </div>
       
@@ -25,7 +25,7 @@ export const Compliance: React.FC = () => {
           <div className="space-y-2">
             <h3 className="font-semibold text-xl">Traceable evidence records</h3>
             <p className="text-black/60 leading-relaxed text-lg">
-              Each extracted output stays connected to its source context for review and verification.
+              Each extracted output remains connected to source context for verification and oversight.
             </p>
           </div>
         </div>

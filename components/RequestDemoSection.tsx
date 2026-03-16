@@ -74,7 +74,7 @@ export const RequestDemoSection: React.FC = () => {
           Request a Demo
         </h2>
         <p className="text-black/60 text-lg font-light">
-          Tell us about your team and we will follow up to schedule a live walkthrough.
+          See how your team can reduce manual review time by 70%+, automate screening, and uncover research trends and gaps.
         </p>
 
         {success ? (

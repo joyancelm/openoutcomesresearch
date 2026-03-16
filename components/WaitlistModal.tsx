@@ -157,7 +157,7 @@ export const WaitlistModal: React.FC<WaitlistModalProps> = ({ isOpen, onClose })
                   disabled={loading}
                   className="w-full bg-black text-white py-3 rounded-xl font-medium hover:bg-black/80 transition-colors disabled:opacity-70 mt-4"
                 >
-                  {loading ? 'Processing...' : 'Request Pilot'}
+                  {loading ? 'Processing...' : 'Join Waitlist'}
                 </button>
               </form>
             </>

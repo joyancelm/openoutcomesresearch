@@ -20,10 +20,10 @@ export const Hero: React.FC = () => {
       <div className="grid lg:grid-cols-2 gap-16 items-center">
         <div className="space-y-8">
           <h1 className="text-5xl md:text-6xl font-medium tracking-tight text-black leading-[1.1]">
-            The AI Research Platform for Health Economics and Outcomes Research (HEOR)
+            The AI platform for health economics and outcomes research (HEOR) evidence reviews
           </h1>
           <p className="text-xl text-black/70 leading-relaxed max-w-lg">
-            Turn research literature into structured evidence your team can use. OpenOutcomesResearch helps HEOR and evidence-focused teams extract key study details, organize findings, and identify research gaps with AI-powered data analytics and evidence synthesis.
+            OpenOutcomesResearch helps evidence teams turn published clinical literature into structured, reviewable data for faster screening, extraction, and analysis.
           </p>
           <div className="space-y-4">
             <div className="flex flex-col sm:flex-row gap-4">
@@ -35,7 +35,7 @@ export const Hero: React.FC = () => {
               </button>
             </div>
             <p className="text-sm text-black/50">
-              Used for HEOR, literature review, evidence synthesis, and data analytics.
+              Built for high-volume literature review workflows, transparent review, and enterprise-grade evidence operations.
             </p>
           </div>
         </div>

@@ -7,10 +7,10 @@ export const FinalCTA: React.FC = () => {
   return (
     <section id="early-access" className="px-6 max-w-4xl mx-auto text-center space-y-8 bg-black/5 p-12 rounded-3xl">
       <h2 className="text-3xl md:text-4xl font-medium tracking-tight">
-        Experience the leading AI research platform for HEOR
+        Turn literature into structured evidence your team can trust
       </h2>
       <p className="text-lg text-black/70 leading-relaxed max-w-2xl mx-auto">
-        See how OpenOutcomesResearch can help your Health Economics and Outcomes Research (HEOR) team organize literature, review findings more efficiently, and identify research gaps with greater clarity.
+        See how OpenOutcomesResearch helps teams accelerate screening, extract structured study data, and uncover trends and evidence gaps without losing the source behind each result.
       </p>
       
       <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -23,7 +23,7 @@ export const FinalCTA: React.FC = () => {
       </div>
       
       <p className="text-sm text-black/50">
-        Early access for research, HEOR, and evidence teams.
+        Built for health economics and outcomes research (HEOR), academic researchers, contract research organizations (CROs), and regulated review environments.
       </p>
     </section>
   );

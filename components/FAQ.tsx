@@ -34,20 +34,36 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
 export const FAQ: React.FC = () => {
   const faqs = [
     {
-      question: "How does OpenOutcomesResearch's AI research platform work?",
-      answer: "Our AI research platform uses advanced natural language processing to extract structured data from unstructured biomedical literature. Unlike generic AI, every data point we extract is linked directly back to its source text in the original document, ensuring complete transparency and auditability for HEOR and evidence synthesis."
+      question: "What is OpenOutcomesResearch?",
+      answer: "OpenOutcomesResearch is an AI platform for health economics and outcomes research (HEOR), evidence synthesis, and literature review workflows. It helps teams screen studies, extract structured study data, and organize findings into review-ready evidence records."
+    },
+    {
+      question: "How does OpenOutcomesResearch work?",
+      answer: "OpenOutcomesResearch helps teams screen literature, extract structured study fields, and organize results into review-ready evidence records. Each extracted output remains linked to source text for verification."
+    },
+    {
+      question: "How is this different from generic AI tools?",
+      answer: "Most AI tools generate summaries. OpenOutcomesResearch is designed to produce structured, source-linked study data that teams can compare, validate, and reuse across evidence workflows."
     },
     {
       question: "What data sources are supported?",
-      answer: "OpenOutcomesResearch integrates with major biomedical databases like PubMed and clinical trial registries. You can also securely upload your own PDF libraries, systematic review results, or proprietary literature collections for analysis."
+      answer: "OpenOutcomesResearch supports major biomedical literature sources such as PubMed and clinical trial registries, along with uploaded PDF libraries and internal literature collections."
+    },
+    {
+      question: "Can reviewers verify every extracted field?",
+      answer: "Yes. The platform is designed so extracted outputs stay connected to source context, allowing reviewers to validate results quickly."
     },
     {
       question: "Is my data secure?",
-      answer: "Yes. We employ enterprise-grade security, including encryption at rest and in transit. We do not use your proprietary data or uploaded documents to train our public AI models, ensuring your intellectual property remains strictly confidential."
+      answer: "Yes. OpenOutcomesResearch is built with enterprise-minded security practices, including encryption in transit and at rest. Proprietary uploaded data is not used to train public AI models."
     },
     {
-      question: "Who is the intended user for OpenOutcomesResearch?",
-      answer: "Our AI research platform is built specifically for Health Economics and Outcomes Research (HEOR) teams, clinical researchers, medical affairs professionals, and academic review teams who need to synthesize evidence and conduct data analytics efficiently."
+      question: "Who is the platform for?",
+      answer: "OpenOutcomesResearch is built for health economics and outcomes research (HEOR) teams, academic research groups, contract research organization (CRO) evidence teams, and pharma organizations that need faster, more transparent literature review workflows."
+    },
+    {
+      question: "Can this support governed or regulated workflows?",
+      answer: "The platform is designed to support traceability, audit history, review states, and signature-ready workflow architecture for teams operating in governed environments."
     }
   ];
 
@@ -58,7 +74,7 @@ export const FAQ: React.FC = () => {
           Frequently Asked Questions
         </h2>
         <p className="text-lg text-black/70">
-          Everything you need to know about the product, data, and security.
+          Everything you need to know about the platform, workflows, and enterprise readiness.
         </p>
       </div>
       

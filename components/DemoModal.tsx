@@ -113,7 +113,7 @@ export const DemoModal: React.FC<DemoModalProps> = ({ isOpen, onClose }) => {
             <>
               <h2 className="text-2xl font-semibold text-black mb-2">Request a Demo</h2>
               <p className="text-black/60 mb-6">
-                See how OpenOutcomesResearch can transform your evidence synthesis workflow.
+                See how OpenOutcomesResearch can automate literature review and reveal research trends and gaps.
               </p>
               
               {error && (

@@ -7,7 +7,7 @@ export const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
         <div className="text-center md:text-left">
           <p className="font-semibold text-black">OpenOutcomesResearch</p>
-          <p className="text-sm text-black/50 mt-1">The AI Research Platform for Health Economics and Outcomes Research (HEOR)</p>
+          <p className="text-sm text-black/50 mt-1">AI-powered structured evidence review for health economics and outcomes research (HEOR)</p>
           <p className="text-sm text-black/50 mt-1">© {new Date().getFullYear()} OpenOutcomesResearch. All rights reserved.</p>
         </div>
         
