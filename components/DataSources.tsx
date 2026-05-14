@@ -39,7 +39,7 @@ export const DataSources: React.FC = () => {
     <section id="data-sources" className="px-6 max-w-6xl mx-auto space-y-12">
       <div className="space-y-6 max-w-3xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-medium tracking-tight">Built to work with the evidence sources teams already use.</h2>
-        <p className="text-lg text-black/70 leading-relaxed">
+        <p className="text-lg text-black/70 leading-relaxed text-justify">
           Scientific evidence does not live in one place. OpenOutcomesResearch is designed to help teams bring together multiple sources and turn them into one structured analytics workflow.
         </p>
       </div>

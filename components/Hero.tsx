@@ -33,8 +33,11 @@ export const Hero: React.FC = () => {
           <p className="text-xl text-black/70 leading-relaxed max-w-lg">
             We help teams search, extract, and analyze literature without relying on manual spreadsheets.
           </p>
-          <div className="space-y-4">
-            <button type="button" onClick={() => scrollToSection('demo')} className="bg-black text-white px-6 py-3 rounded-full font-medium hover:bg-black/80 transition-colors inline-block text-center">
+          <div className="flex gap-4 flex-wrap md:flex-nowrap">
+            <a href="https://app.openoutcomesresearch.com" target="_blank" rel="noopener noreferrer" className="bg-black text-white px-6 py-3 rounded-full font-medium hover:bg-black/80 transition-colors inline-block text-center">
+              Launch App
+            </a>
+            <button type="button" onClick={() => scrollToSection('demo')} className="bg-white text-black border border-black px-6 py-3 rounded-full font-medium hover:bg-black/5 transition-colors inline-block text-center">
               Try the Demo
             </button>
 

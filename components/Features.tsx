@@ -41,7 +41,7 @@ export const ValueProps: React.FC = () => {
         <h2 className="text-3xl md:text-4xl font-medium tracking-tight">
           Everything teams need to turn literature into structured evidence.
         </h2>
-        <p className="text-lg text-black/70 leading-relaxed">
+        <p className="text-lg text-black/70 leading-relaxed text-justify">
           OpenOutcomesResearch helps teams move from searching papers to working with evidence they can review, compare, and reuse.
         </p>
       </div>

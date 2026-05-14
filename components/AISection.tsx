@@ -18,10 +18,10 @@ export const AISection: React.FC = () => {
         <h2 className="text-3xl md:text-4xl font-medium tracking-tight">
           See what the evidence is actually saying.
         </h2>
-        <p className="text-lg text-black/70 leading-relaxed">
+        <p className="text-lg text-black/70 leading-relaxed text-justify">
           Once evidence is structured, teams can move beyond single-paper summaries and look at the evidence base as a whole.
         </p>
-        <p className="text-lg text-black/70 leading-relaxed">
+        <p className="text-lg text-black/70 leading-relaxed text-justify">
           That makes it easier to compare therapies, spot gaps, and understand where the literature is heading.
         </p>
       </div>

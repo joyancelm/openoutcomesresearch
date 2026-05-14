@@ -21,7 +21,7 @@ export const Compliance: React.FC = () => {
         <h2 className="text-3xl md:text-4xl font-medium tracking-tight">
           We are building the data layer for scientific literature.
         </h2>
-        <div className="text-lg text-black/70 leading-relaxed space-y-4">
+        <div className="text-lg text-black/70 leading-relaxed space-y-4 text-justify">
           <p>
             Scientific literature is one of the most valuable knowledge sources in healthcare, but it was never built for modern analytics.
           </p>

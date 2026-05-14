@@ -13,7 +13,7 @@ export const FinalCTA: React.FC = () => {
       <h2 className="text-3xl md:text-4xl font-medium tracking-tight">
         Turn your evidence sources into data analytics.
       </h2>
-      <p className="text-lg text-black/70 leading-relaxed max-w-2xl mx-auto">
+      <p className="text-lg text-black/70 leading-relaxed max-w-2xl mx-auto text-justify">
         Join the OpenOutcomesResearch beta and start turning scientific literature, research databases, and internal files into structured evidence data, dashboards, and insights.
       </p>
       

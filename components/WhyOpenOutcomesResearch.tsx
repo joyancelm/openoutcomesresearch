@@ -8,7 +8,7 @@ export const WhyOpenOutcomesResearch: React.FC = () => {
         <h2 className="text-3xl md:text-4xl font-medium tracking-tight">
           Not just a search tool. Not just a summary tool.
         </h2>
-        <div className="text-lg text-black/70 leading-relaxed space-y-4">
+        <div className="text-lg text-black/70 leading-relaxed space-y-4 text-justify">
           <p>
             Most literature tools help teams find papers or manage reviews. Most AI tools summarize documents.
           </p>

@@ -7,7 +7,7 @@ export const Solution: React.FC = () => {
         <h2 className="text-3xl md:text-4xl font-medium tracking-tight">
           OpenOutcomesResearch turns scientific evidence into data analytics.
         </h2>
-        <div className="text-lg text-black/70 leading-relaxed space-y-4">
+        <div className="text-lg text-black/70 leading-relaxed space-y-4 text-justify">
           <p>
             OpenOutcomesResearch is AI infrastructure for literature review and evidence analytics. It is built to connect with the evidence sources teams already use, including scientific literature, journal subscriptions, clinical trial databases, public databases, real world evidence sources, and internal research files.
           </p>

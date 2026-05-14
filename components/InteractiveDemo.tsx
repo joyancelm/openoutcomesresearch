@@ -15,7 +15,7 @@ export const InteractiveDemo: React.FC = () => {
         <h2 className="text-3xl md:text-4xl font-medium tracking-tight">
           See the literature review workflow in action.
         </h2>
-        <p className="text-lg text-black/70 leading-relaxed">
+        <p className="text-lg text-black/70 leading-relaxed text-justify">
           Explore how OpenOutcomesResearch turns unstructured papers into organized, source-linked study data to uncover trends and evidence gaps.
         </p>
       </div>

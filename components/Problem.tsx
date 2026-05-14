@@ -8,7 +8,7 @@ export const Problem: React.FC = () => {
         <h2 className="text-3xl md:text-4xl font-medium tracking-tight">
           Healthcare evidence is everywhere, but it is still hard to analyze.
         </h2>
-        <div className="text-lg text-black/70 leading-relaxed space-y-4">
+        <div className="text-lg text-black/70 leading-relaxed space-y-4 text-justify">
           <p>
             Research teams rely on scientific literature, journal subscriptions, clinical trial databases, public datasets, real world evidence, and internal files to answer important questions.
           </p>

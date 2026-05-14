@@ -16,10 +16,10 @@ export const Trust: React.FC = () => {
         <h2 className="text-3xl md:text-4xl font-medium tracking-tight">
           Built for evidence work where the source still matters.
         </h2>
-        <p className="text-lg text-black/70 leading-relaxed">
+        <p className="text-lg text-black/70 leading-relaxed text-justify">
           In healthcare and scientific research, it is not enough for software to sound confident. Teams need to know where the information came from, how it was extracted, and whether it can be reviewed.
         </p>
-        <p className="text-lg text-black/70 leading-relaxed">
+        <p className="text-lg text-black/70 leading-relaxed text-justify">
           OpenOutcomesResearch is designed to keep evidence structured, transparent, and connected to the original source.
         </p>
       </div>
