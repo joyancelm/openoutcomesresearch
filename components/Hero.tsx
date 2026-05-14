@@ -3,12 +3,12 @@ import { Database, Activity, Search, FileText, CheckCircle2, ChevronRight, Cpu, 
 import { motion, AnimatePresence } from 'framer-motion';
 
 export const Hero: React.FC = () => {
-  const [step, setStep] = useState(0);
+  const [step, setStep] = useState<number>(0);
 
   // Loop through 3 steps: Search -> Results -> Analytics
   useEffect(() => {
     const interval = setInterval(() => {
-      setStep((prev) => (prev + 1) % 3);
+      setStep((prev: number) => (prev + 1) % 3);
     }, 5000); // 5 seconds per step
     return () => clearInterval(interval);
   }, []);
@@ -49,7 +49,7 @@ export const Hero: React.FC = () => {
               <div className="w-3 h-3 rounded-full bg-green-400"></div>
             </div>
             <div className="flex-1 mx-4 bg-gray-100 rounded-md h-6 flex items-center justify-center text-[10px] text-gray-500 font-mono">
-              app.openoutcomes.com
+              app.openoutcomesresearch.com
             </div>
             <div className="w-12"></div>
           </div>
