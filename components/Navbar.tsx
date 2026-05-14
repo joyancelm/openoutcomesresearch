@@ -1,9 +1,7 @@
 import React from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { useDemoModal } from '../DemoModalContext';
 
 export const Navbar: React.FC = () => {
-  const { openDemoModal } = useDemoModal();
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -42,9 +40,9 @@ export const Navbar: React.FC = () => {
             <button type="button" onClick={() => goToSection('how-it-works')} className="text-sm font-medium text-black/60 hover:text-black transition-colors">How It Works</button>
             <Link to="/about" className="text-sm font-medium text-black/60 hover:text-black transition-colors">About</Link>
           </div>
-          <button type="button" onClick={openDemoModal} className="text-sm font-medium text-white bg-black hover:bg-black/80 px-4 py-2 rounded-full transition-all">
-            Request a Demo
-          </button>
+          <a href="https://app.openoutcomesresearch.com" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-white bg-black hover:bg-black/80 px-4 py-2 rounded-full transition-all inline-block">
+            Launch App
+          </a>
         </div>
       </div>
     </nav>

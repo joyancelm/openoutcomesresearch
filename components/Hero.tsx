@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Database, Activity, Search, FileText, CheckCircle2, ChevronRight, Cpu, BarChart3, Users, ShieldAlert, TrendingUp } from 'lucide-react';
-import { useDemoModal } from '../DemoModalContext';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export const Hero: React.FC = () => {
-  const { openDemoModal, openWaitlistModal } = useDemoModal();
   const [step, setStep] = useState(0);
 
   // Loop through 3 steps: Search -> Results -> Analytics
@@ -27,15 +25,15 @@ export const Hero: React.FC = () => {
           </p>
           <div className="space-y-4">
             <div className="flex flex-col sm:flex-row gap-4">
-              <button type="button" onClick={openDemoModal} className="bg-black text-white px-6 py-3 rounded-full font-medium hover:bg-black/80 transition-colors">
-                Request a Demo
-              </button>
-              <button type="button" onClick={openWaitlistModal} className="bg-white text-black border border-black/20 px-6 py-3 rounded-full font-medium hover:bg-black/5 transition-colors text-center">
-                Join the Waitlist
-              </button>
+              <a href="https://app.openoutcomesresearch.com" target="_blank" rel="noopener noreferrer" className="bg-black text-white px-6 py-3 rounded-full font-medium hover:bg-black/80 transition-colors inline-block text-center">
+                Launch App
+              </a>
+              <a href="https://app.openoutcomesresearch.com" target="_blank" rel="noopener noreferrer" className="bg-white text-black border border-black/20 px-6 py-3 rounded-full font-medium hover:bg-black/5 transition-colors text-center">
+                Start Free Beta
+              </a>
             </div>
             <p className="text-sm text-black/50">
-              Built for high-volume literature review workflows, transparent review, and enterprise-grade evidence operations.
+              Start your free beta access now and streamline your literature review process.
             </p>
           </div>
         </div>
