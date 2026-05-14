@@ -2,16 +2,17 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Hero } from '../components/Hero';
-import { Trust } from '../components/Trust';
 import { Problem } from '../components/Problem';
 import { Solution } from '../components/Solution';
 import { ValueProps } from '../components/Features';
+import { DataSources } from '../components/DataSources';
+import { HowItWorks } from '../components/HowItWorks';
+import { AISection } from '../components/AISection';
 import { UseCases } from '../components/UseCases';
 import { WhyOpenOutcomesResearch } from '../components/WhyOpenOutcomesResearch';
-import { InteractiveDemo } from '../components/InteractiveDemo';
+import { Trust } from '../components/Trust';
 import { Compliance } from '../components/Compliance';
-import { AISection } from '../components/AISection';
-import { FAQ } from '../components/FAQ';
+import { InteractiveDemo } from '../components/InteractiveDemo';
 import { FinalCTA } from '../components/FinalCTA';
 
 export const Landing: React.FC = () => {
@@ -39,18 +40,19 @@ export const Landing: React.FC = () => {
   return (
     <main className="flex-grow pt-24 pb-24 space-y-32">
       <Hero />
-      <Trust />
       <Problem />
       <Solution />
-      <section className="px-6 max-w-7xl mx-auto">
+      <section className="px-6 max-w-6xl mx-auto">
         <ValueProps />
       </section>
+      <DataSources />
+      <HowItWorks />
+      <InteractiveDemo />
+      <AISection />
       <UseCases />
       <WhyOpenOutcomesResearch />
-      <InteractiveDemo />
+      <Trust />
       <Compliance />
-      <AISection />
-      <FAQ />
       <FinalCTA />
     </main>
   );

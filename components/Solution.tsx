@@ -2,36 +2,47 @@ import React from 'react';
 
 export const Solution: React.FC = () => {
   return (
-    <section id="how-it-works" className="px-6 max-w-6xl mx-auto space-y-12">
-      <div className="space-y-6 max-w-3xl">
+    <section id="solution" className="px-6 max-w-6xl mx-auto space-y-12">
+      <div className="space-y-6 max-w-3xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-medium tracking-tight">
-          A system of record for AI-assisted evidence review
+          OpenOutcomesResearch turns scientific evidence into data analytics.
         </h2>
-        <p className="text-lg text-black/70 leading-relaxed">
-          OpenOutcomesResearch helps teams move from reading papers one by one to working with structured, study-level evidence across the literature. Every extracted result remains connected to source text so reviewers can validate outputs with confidence.
-        </p>
+        <div className="text-lg text-black/70 leading-relaxed space-y-4">
+          <p>
+            OpenOutcomesResearch is AI infrastructure for literature review and evidence analytics. It is built to connect with the evidence sources teams already use, including scientific literature, journal subscriptions, clinical trial databases, public databases, real world evidence sources, and internal research files.
+          </p>
+          <p>
+            The platform helps turn those sources into structured evidence data that can be searched, screened, extracted, analyzed, and reused.
+          </p>
+          <p>
+            Instead of moving between papers, spreadsheets, databases, and reports, teams can build evidence datasets, generate dashboards, compare treatments, identify trends, and find research gaps in one workflow.
+          </p>
+        </div>
       </div>
       
-      <div className="grid md:grid-cols-3 gap-6">
-        <div className="p-8 border border-black/10 rounded-3xl space-y-5 bg-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-          <div className="text-sm font-mono text-black/40 font-medium">01</div>
-          <h3 className="font-semibold text-lg">Gather relevant literature</h3>
+      <div className="grid md:grid-cols-2 gap-6">
+        <div className="p-8 border border-black/10 rounded-3xl space-y-5 bg-white shadow-sm">
+          <h3 className="font-semibold text-lg">Connect evidence sources</h3>
           <p className="text-black/60 leading-relaxed">
-            Start from a research question and collect relevant studies from literature databases and internal document sets.
+            Bring together literature, clinical trials, public databases, real world evidence, and internal files.
           </p>
         </div>
-        <div className="p-8 border border-black/10 rounded-3xl space-y-5 bg-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-          <div className="text-sm font-mono text-black/40 font-medium">02</div>
-          <h3 className="font-semibold text-lg">Extract structured study data</h3>
+        <div className="p-8 border border-black/10 rounded-3xl space-y-5 bg-white shadow-sm">
+          <h3 className="font-semibold text-lg">Extract structured data</h3>
           <p className="text-black/60 leading-relaxed">
-            Capture study design, populations, interventions, comparators, outcomes, endpoints, and other key fields in organized formats.
+            Turn papers and research records into fields like population, intervention, comparator, outcomes, safety, study design, and source.
           </p>
         </div>
-        <div className="p-8 border border-black/10 rounded-3xl space-y-5 bg-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-          <div className="text-sm font-mono text-black/40 font-medium">03</div>
-          <h3 className="font-semibold text-lg">Analyze trends and gaps</h3>
+        <div className="p-8 border border-black/10 rounded-3xl space-y-5 bg-white shadow-sm">
+          <h3 className="font-semibold text-lg">Analyze the landscape</h3>
           <p className="text-black/60 leading-relaxed">
-            Compare findings across studies, detect patterns in the evidence base, and surface areas where evidence is limited, inconsistent, or underreported.
+            Find trends, gaps, treatment comparisons, endpoint patterns, and emerging evidence.
+          </p>
+        </div>
+        <div className="p-8 border border-black/10 rounded-3xl space-y-5 bg-white shadow-sm">
+          <h3 className="font-semibold text-lg">Export reusable insights</h3>
+          <p className="text-black/60 leading-relaxed">
+            Create evidence tables, datasets, charts, and analytics outputs that teams can use across projects.
           </p>
         </div>
       </div>

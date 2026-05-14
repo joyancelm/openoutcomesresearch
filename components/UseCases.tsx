@@ -3,33 +3,45 @@ import React from 'react';
 export const UseCases: React.FC = () => {
   return (
     <section id="use-cases" className="px-6 max-w-6xl mx-auto space-y-12">
-      <h2 className="text-3xl md:text-4xl font-medium tracking-tight">
-        Built for evidence-intensive teams across research and industry
+      <h2 className="text-3xl md:text-4xl font-medium tracking-tight text-center">
+        Built for teams that turn evidence into decisions.
       </h2>
-      
+
       <div className="grid md:grid-cols-2 gap-6">
         <div className="p-10 border border-black/10 rounded-3xl space-y-4 bg-black/5">
-          <h3 className="font-semibold text-xl">Health Economics and Outcomes Research (HEOR) Teams</h3>
+          <h3 className="font-semibold text-xl">HEOR teams</h3>
           <p className="text-black/70 leading-relaxed">
-            Transform large volumes of literature into structured evidence inputs for faster review, comparison, and evidence strategy planning.
+            Extract outcomes, economic evidence, treatment comparisons, and study details for evidence generation and outcomes research.
           </p>
         </div>
         <div className="p-10 border border-black/10 rounded-3xl space-y-4 bg-black/5">
-          <h3 className="font-semibold text-xl">Contract Research Organization (CRO) Evidence Teams</h3>
+          <h3 className="font-semibold text-xl">Market access teams</h3>
           <p className="text-black/70 leading-relaxed">
-            Deliver literature reviews more efficiently by converting unstructured publications into reusable, review-ready study data.
+            Organize clinical and economic evidence to support payer research, value communication, treatment comparisons, and reimbursement strategy.
           </p>
         </div>
         <div className="p-10 border border-black/10 rounded-3xl space-y-4 bg-black/5">
-          <h3 className="font-semibold text-xl">Pharma Medical Affairs and Research Teams</h3>
+          <h3 className="font-semibold text-xl">Pharma evidence teams</h3>
           <p className="text-black/70 leading-relaxed">
-            Track emerging evidence, compare outcomes across studies, and identify gaps by indication, endpoint, or population.
+            Build structured datasets for launch planning, competitive intelligence, treatment landscapes, and evidence strategy.
           </p>
         </div>
         <div className="p-10 border border-black/10 rounded-3xl space-y-4 bg-black/5">
-          <h3 className="font-semibold text-xl">Academic Research Programs</h3>
+          <h3 className="font-semibold text-xl">CROs and consultants</h3>
           <p className="text-black/70 leading-relaxed">
-            Reduce manual review burden while improving transparency, reproducibility, and evidence oversight.
+            Move faster from literature search to evidence tables, gap analysis, and client-ready deliverables.
+          </p>
+        </div>
+        <div className="p-10 border border-black/10 rounded-3xl space-y-4 bg-black/5">
+          <h3 className="font-semibold text-xl">Payer and formulary teams</h3>
+          <p className="text-black/70 leading-relaxed">
+            Review treatment evidence in a structured format that makes comparisons easier.
+          </p>
+        </div>
+        <div className="p-10 border border-black/10 rounded-3xl space-y-4 bg-black/5">
+          <h3 className="font-semibold text-xl">Academic researchers</h3>
+          <p className="text-black/70 leading-relaxed">
+            Turn literature searches into structured research datasets that are easier to analyze, export, and reuse.
           </p>
         </div>
       </div>

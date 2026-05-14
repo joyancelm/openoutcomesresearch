@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Database, Activity, Search, FileText, CheckCircle2, ChevronRight, Cpu, BarChart3, Users, ShieldAlert, TrendingUp } from 'lucide-react';
+import { Database, Activity, Search, FileText, CheckCircle2, BarChart3 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export const Hero: React.FC = () => {
@@ -13,33 +13,37 @@ export const Hero: React.FC = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const scrollToSection = (sectionId: string) => {
+    const target = document.getElementById(sectionId);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
-    <section className="px-6 max-w-7xl mx-auto pt-12 md:pt-20">
+    <section id="platform" className="px-6 max-w-7xl mx-auto pt-12 md:pt-20">
       <div className="grid lg:grid-cols-2 gap-16 items-center">
         <div className="space-y-8">
+          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-black/50">
+            AI infrastructure for literature review and data analytics
+          </p>
           <h1 className="text-5xl md:text-6xl font-medium tracking-tight text-black leading-[1.1]">
-            The AI platform for Health Economics and Outcomes Research (HEOR) evidence reviews
+            Turn scientific evidence into usable data insights.
           </h1>
           <p className="text-xl text-black/70 leading-relaxed max-w-lg">
-            OpenOutcomesResearch helps evidence teams turn published clinical literature into structured, reviewable data for faster screening, extraction, and analysis.
+            We help teams search, extract, and analyze literature without relying on manual spreadsheets.
           </p>
           <div className="space-y-4">
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a href="https://app.openoutcomesresearch.com" target="_blank" rel="noopener noreferrer" className="bg-black text-white px-6 py-3 rounded-full font-medium hover:bg-black/80 transition-colors inline-block text-center">
-                Launch App
-              </a>
-              <a href="https://app.openoutcomesresearch.com" target="_blank" rel="noopener noreferrer" className="bg-white text-black border border-black/20 px-6 py-3 rounded-full font-medium hover:bg-black/5 transition-colors text-center">
-                Start Free Beta
-              </a>
-            </div>
-            <p className="text-sm text-black/50">
-              Start your free beta access now and streamline your literature review process.
-            </p>
+            <button type="button" onClick={() => scrollToSection('demo')} className="bg-black text-white px-6 py-3 rounded-full font-medium hover:bg-black/80 transition-colors inline-block text-center">
+              Try the Demo
+            </button>
+
           </div>
         </div>
-        
-        {/* Hero-side visual: Animated Demo Sequence */}
-        <div className="relative w-full aspect-square md:aspect-[4/3] lg:aspect-square xl:aspect-[4/3] max-w-2xl mx-auto lg:mx-0 rounded-3xl overflow-hidden border border-slate-200 shadow-2xl shadow-blue-900/10 bg-[#f8f9fa] flex flex-col">
+
+        <div className="space-y-4">
+          {/* Hero-side visual: Animated Demo Sequence */}
+          <div className="relative w-full aspect-square md:aspect-[4/3] lg:aspect-square xl:aspect-[4/3] max-w-2xl mx-auto lg:mx-0 rounded-3xl overflow-hidden border border-slate-200 shadow-2xl shadow-blue-900/10 bg-[#f8f9fa] flex flex-col">
           
           {/* Mock Browser Header */}
           <div className="h-10 md:h-12 border-b border-black/10 flex items-center px-4 justify-between bg-white shrink-0 z-20">
@@ -58,10 +62,10 @@ export const Hero: React.FC = () => {
           <div className="flex-1 relative overflow-hidden p-4 md:p-6">
             <AnimatePresence mode="wait">
               
-              {/* STEP 0: SEARCH */}
+              {/* STEP 0: RESEARCH QUESTION */}
               {step === 0 && (
                 <motion.div 
-                  key="search"
+                  key="research-question"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
@@ -69,7 +73,8 @@ export const Hero: React.FC = () => {
                   className="h-full flex flex-col gap-4"
                 >
                   <div className="text-center space-y-2 pt-4">
-                    <h3 className="text-lg font-bold text-gray-900">What are you researching?</h3>
+                    <div className="text-[10px] font-semibold tracking-[0.24em] uppercase text-gray-500">Research question</div>
+                    <h3 className="text-lg font-bold text-gray-900">What does the evidence show?</h3>
                     <div className="relative max-w-md mx-auto">
                       <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
                       <div className="w-full pl-10 pr-4 py-3 rounded-full border border-gray-200 shadow-sm bg-white text-left overflow-hidden flex items-center h-12">
@@ -79,7 +84,7 @@ export const Hero: React.FC = () => {
                           transition={{ duration: 2, ease: "linear" }}
                           className="text-xs text-gray-700 font-medium whitespace-nowrap overflow-hidden border-r-2 border-indigo-500 pr-1"
                         >
-                          anticoagulant use for CAT in patients
+                          scientific literature review and data analytics
                         </motion.div>
                       </div>
                     </div>
@@ -92,16 +97,13 @@ export const Hero: React.FC = () => {
                     className="bg-white rounded-xl border border-gray-200 p-4 shadow-sm flex-1 flex flex-col"
                   >
                     <div className="flex items-center justify-between mb-2">
-                      <div className="text-[10px] font-semibold text-gray-500 tracking-wider">LIVE BOOLEAN PREVIEW</div>
+                      <div className="text-[10px] font-semibold text-gray-500 tracking-wider">Evidence sources</div>
                       <span className="text-[8px] font-medium px-2 py-0.5 bg-green-100 text-green-700 rounded-full">OPTIMIZED</span>
                     </div>
-                    <pre className="flex-1 text-[9px] text-gray-600 font-mono bg-gray-50 p-3 rounded-lg overflow-hidden border border-gray-100">
-{`("Cancer"[MeSH] OR "Neoplasms"[MeSH] OR "cancer"[tiab])
-AND
-("Thrombosis"[MeSH] OR "CAT"[tiab] OR "thrombosis"[tiab])
-AND
-("Anticoagulants"[MeSH] OR "DOACs"[tiab])`}
-                    </pre>
+                    <div className="flex-1 bg-gray-50 p-4 rounded-lg overflow-hidden border border-gray-100 flex flex-col justify-center text-sm text-gray-700 space-y-3">
+                      <p className="font-semibold text-gray-900">Scientific literature</p>
+                      <p>Clinical trials, public databases, real world evidence, and internal files.</p>
+                    </div>
                   </motion.div>
 
                   <motion.div 
@@ -110,15 +112,15 @@ AND
                     transition={{ delay: 3.5, duration: 0.3 }}
                     className="bg-black text-white rounded-lg py-3 flex items-center justify-center gap-2 text-xs font-medium shadow-md"
                   >
-                    <Search className="w-3 h-3" /> Screen 230 Articles
+                    <Search className="w-3 h-3" /> Find relevant evidence
                   </motion.div>
                 </motion.div>
               )}
 
-              {/* STEP 1: RESULTS & EXTRACTION */}
+              {/* STEP 1: AI EXTRACTION */}
               {step === 1 && (
                 <motion.div 
-                  key="results"
+                  key="ai-extraction"
                   initial={{ opacity: 0, x: 50 }}
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -50 }}
@@ -128,12 +130,12 @@ AND
                   <div className="flex justify-between items-center bg-white p-3 rounded-xl border border-gray-200 shadow-sm">
                     <div className="flex items-center gap-2">
                       <Database className="w-4 h-4 text-indigo-600" />
-                      <span className="text-xs font-bold text-gray-800">Extracting Evidence...</span>
+                      <span className="text-xs font-bold text-gray-800">AI extraction</span>
                     </div>
-                    <span className="text-[10px] text-gray-500 font-mono">230 / 230</span>
+                    <span className="text-[10px] text-gray-500 font-mono">Study details, outcomes, comparators, safety findings, economic data</span>
                   </div>
 
-                  <div className="flex-1 flex flex-col gap-2 relative">
+                  <div className="flex-1 flex flex-col gap-3 relative">
                     {/* Scanning Line */}
                     <motion.div 
                       animate={{ top: ['0%', '100%', '0%'] }}
@@ -141,29 +143,31 @@ AND
                       className="absolute left-0 right-0 h-10 bg-gradient-to-b from-transparent via-indigo-500/10 to-transparent border-b border-indigo-500/30 z-10 pointer-events-none rounded-lg"
                     />
 
-                    {[1, 2, 3, 4].map((i) => (
+                    {[
+                      'Study details',
+                      'Outcomes',
+                      'Comparators',
+                      'Safety findings',
+                      'Economic data',
+                    ].map((label, i) => (
                       <motion.div 
-                        key={i}
+                        key={label}
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: i * 0.2 }}
+                        transition={{ delay: i * 0.15 }}
                         className="bg-white p-3 rounded-lg border border-gray-200 shadow-sm flex items-start gap-3"
                       >
                         <div className="w-6 h-6 rounded bg-indigo-50 flex items-center justify-center shrink-0">
                           <FileText className="w-3 h-3 text-indigo-600" />
                         </div>
                         <div className="space-y-1.5 flex-1">
-                          <div className="h-2.5 bg-gray-200 rounded w-3/4"></div>
-                          <div className="h-2 bg-gray-100 rounded w-full"></div>
-                          <div className="flex gap-2 pt-1">
-                            <div className="h-3 w-12 bg-green-100 rounded"></div>
-                            <div className="h-3 w-16 bg-blue-100 rounded"></div>
-                          </div>
+                          <div className="text-sm font-semibold text-gray-900">{label}</div>
+                          <div className="text-xs text-gray-500">Pulled from source text and structured for review.</div>
                         </div>
                         <motion.div 
                           initial={{ scale: 0 }}
                           animate={{ scale: 1 }}
-                          transition={{ delay: (i * 0.2) + 0.5 }}
+                          transition={{ delay: (i * 0.15) + 0.4 }}
                         >
                           <CheckCircle2 className="w-4 h-4 text-green-500" />
                         </motion.div>
@@ -173,23 +177,28 @@ AND
                 </motion.div>
               )}
 
-              {/* STEP 2: ANALYTICS DASHBOARD */}
+              {/* STEP 2: STRUCTURED DATASET + ANALYTICS */}
               {step === 2 && (
                 <motion.div 
-                  key="analytics"
+                  key="structured-dataset"
                   initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 1.05 }}
                   transition={{ duration: 0.5 }}
                   className="h-full flex flex-col gap-3"
                 >
+                  <div className="text-[10px] font-semibold tracking-[0.24em] uppercase text-gray-500">Structured dataset</div>
+                  <div className="bg-white rounded-xl border border-gray-200 p-3 shadow-sm">
+                    <p className="text-sm font-medium text-gray-900">Turn scattered evidence into clean, usable data.</p>
+                  </div>
+
                   <div className="flex items-center gap-2 mb-1">
                     <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center shadow-sm">
                       <BarChart3 className="w-4 h-4 text-white" />
                     </div>
                     <div>
-                      <h2 className="text-sm font-bold text-gray-900">Research Analytics</h2>
-                      <p className="text-[9px] text-gray-500">230 studies analyzed</p>
+                      <h2 className="text-sm font-bold text-gray-900">Analytics dashboard</h2>
+                      <p className="text-[9px] text-gray-500">Find trends, gaps, comparisons, and insights.</p>
                     </div>
                   </div>
 
@@ -248,6 +257,7 @@ AND
                 </motion.div>
               )}
             </AnimatePresence>
+          </div>
           </div>
         </div>
       </div>

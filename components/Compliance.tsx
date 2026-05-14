@@ -1,82 +1,51 @@
 import React from 'react';
-import { FileCheck2, GitPullRequestDraft, History, PenTool, ShieldCheck } from 'lucide-react';
+import { ShieldCheck, Layers, Database, Globe2, FileSpreadsheet, Search, BarChart3 } from 'lucide-react';
 
 export const Compliance: React.FC = () => {
+  const cards = [
+    ['Scientific literature', 'Search and analyze published research from medical and scientific databases.'],
+    ['Journal subscriptions', 'Work with literature your institution already has access to through paid journal subscriptions.'],
+    ['Clinical trial databases', 'Analyze trial records, study designs, interventions, endpoints, enrollment details, and trial status.'],
+    ['Public databases', 'Use public research databases to expand the evidence landscape and support broader analysis.'],
+    ['Real world evidence sources', 'Connect literature-based evidence with real world evidence sources to support a more complete view of treatment value and outcomes.'],
+    ['Internal research files', 'Bring in team-owned PDFs, spreadsheets, review files, and research documents to make internal evidence easier to analyze and reuse.'],
+  ];
+
   return (
-    <section className="px-6 max-w-5xl mx-auto space-y-12">
-      <div className="space-y-6 max-w-3xl">
+    <section id="vision" className="px-6 max-w-6xl mx-auto space-y-12">
+      <div className="space-y-6 max-w-3xl mx-auto text-center">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black/5 border border-black/10 text-sm font-medium text-black/70">
           <ShieldCheck className="w-4 h-4" />
-          Designed to support 21 CFR Part 11-aligned workflows
+          Scientific literature, turned into data analytics
         </div>
         <h2 className="text-3xl md:text-4xl font-medium tracking-tight">
-          Built for traceable, governed review workflows
+          We are building the data layer for scientific literature.
         </h2>
-        <p className="text-lg text-black/70 leading-relaxed">
-          OpenOutcomesResearch supports configurable controls for audit-friendly electronic records, workflow governance, and review traceability in regulated research environments.
-        </p>
+        <div className="text-lg text-black/70 leading-relaxed space-y-4">
+          <p>
+            Scientific literature is one of the most valuable knowledge sources in healthcare, but it was never built for modern analytics.
+          </p>
+          <p>
+            OpenOutcomesResearch is building the infrastructure to change that.
+          </p>
+          <p>
+            By turning literature, clinical trial records, public databases, real world evidence sources, and internal files into structured evidence data, the platform helps teams identify trends, find gaps, compare treatments, and generate insights from the research they already rely on.
+          </p>
+        </div>
       </div>
-      
-      <div className="space-y-8 border-t border-black/10 pt-8">
-        <div className="flex gap-6 items-start">
-          <div className="w-12 h-12 shrink-0 bg-black/5 rounded-full flex items-center justify-center">
-            <FileCheck2 className="w-6 h-6 text-black/70" />
+
+      <div className="grid md:grid-cols-2 gap-6">
+        {cards.map(([title, desc]) => (
+          <div key={title} className="p-6 rounded-3xl border border-black/10 bg-white shadow-sm space-y-3">
+            <h3 className="font-semibold text-lg">{title}</h3>
+            <p className="text-black/60 leading-relaxed">{desc}</p>
           </div>
-          <div className="space-y-2">
-            <h3 className="font-semibold text-xl">Traceable evidence records</h3>
-            <p className="text-black/60 leading-relaxed text-lg">
-              Each extracted output remains connected to source context for verification and oversight.
-            </p>
-          </div>
-        </div>
-        
-        <div className="flex gap-6 items-start">
-          <div className="w-12 h-12 shrink-0 bg-black/5 rounded-full flex items-center justify-center">
-            <GitPullRequestDraft className="w-6 h-6 text-black/70" />
-          </div>
-          <div className="space-y-2">
-            <h3 className="font-semibold text-xl">Governed review states</h3>
-            <p className="text-black/60 leading-relaxed text-lg">
-              Support draft, reviewed, approved, and signed-off workflow states for evidence records.
-            </p>
-          </div>
-        </div>
-        
-        <div className="flex gap-6 items-start">
-          <div className="w-12 h-12 shrink-0 bg-black/5 rounded-full flex items-center justify-center">
-            <History className="w-6 h-6 text-black/70" />
-          </div>
-          <div className="space-y-2">
-            <h3 className="font-semibold text-xl">Audit trail visibility</h3>
-            <p className="text-black/60 leading-relaxed text-lg">
-              Track who created, edited, reviewed, or approved a record and when those actions occurred.
-            </p>
-          </div>
-        </div>
-        
-        <div className="flex gap-6 items-start">
-          <div className="w-12 h-12 shrink-0 bg-black/5 rounded-full flex items-center justify-center">
-            <PenTool className="w-6 h-6 text-black/70" />
-          </div>
-          <div className="space-y-2">
-            <h3 className="font-semibold text-xl">Signature-ready workflow architecture</h3>
-            <p className="text-black/60 leading-relaxed text-lg">
-              Designed to support electronic signature controls where regulated sign-off is required.
-            </p>
-          </div>
-        </div>
-        
-        <div className="flex gap-6 items-start">
-          <div className="w-12 h-12 shrink-0 bg-black/5 rounded-full flex items-center justify-center">
-            <ShieldCheck className="w-6 h-6 text-black/70" />
-          </div>
-          <div className="space-y-2">
-            <h3 className="font-semibold text-xl">Inspection-ready documentation model</h3>
-            <p className="text-black/60 leading-relaxed text-lg">
-              Structured outputs and change history designed for review, retention, and oversight.
-            </p>
-          </div>
-        </div>
+        ))}
+      </div>
+      <div className="rounded-3xl bg-black text-white p-8 shadow-sm">
+        <p className="text-lg leading-relaxed">
+          The papers and databases already exist. The opportunity is turning them into data that research and healthcare teams can actually use.
+        </p>
       </div>
     </section>
   );

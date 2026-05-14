@@ -3,61 +3,45 @@ import { X, Check } from 'lucide-react';
 
 export const WhyOpenOutcomesResearch: React.FC = () => {
   return (
-    <section className="px-6 max-w-6xl mx-auto space-y-12">
-      <div className="space-y-6 max-w-3xl">
+    <section id="differentiation" className="px-6 max-w-6xl mx-auto space-y-12">
+      <div className="space-y-6 max-w-3xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-medium tracking-tight">
-            Built for evidence review, not generic AI chat
+          Not just a search tool. Not just a summary tool.
         </h2>
-        <p className="text-lg text-black/70 leading-relaxed">
-            General-purpose AI tools can summarize text, but evidence teams need structured outputs, traceable workflows, and a reliable link back to the original source. OpenOutcomesResearch is designed for how literature is actually screened, extracted, reviewed, and analyzed in health economics and outcomes research (HEOR), evidence synthesis, and enterprise research settings.
-        </p>
-      </div>
-      
-      <div className="border border-black/10 rounded-[2rem] overflow-hidden">
-        <div className="grid md:grid-cols-2">
-          <div className="p-10 md:p-16 bg-black/5 space-y-8">
-            <h3 className="text-xl font-semibold text-black/60">Generic AI tools</h3>
-            <ul className="space-y-6">
-              <li className="flex gap-4 text-black/60">
-                <X className="w-6 h-6 shrink-0 text-black/40" />
-                   <span>Narrative summaries that are difficult to compare across studies</span>
-              </li>
-              <li className="flex gap-4 text-black/60">
-                <X className="w-6 h-6 shrink-0 text-black/40" />
-                   <span>Limited traceability from outputs back to source text</span>
-              </li>
-              <li className="flex gap-4 text-black/60">
-                <X className="w-6 h-6 shrink-0 text-black/40" />
-                   <span>Often miss nuanced endpoints, subgroups, and evidence gaps</span>
-              </li>
-              <li className="flex gap-4 text-black/60">
-                <X className="w-6 h-6 shrink-0 text-black/40" />
-                   <span>Depend on repeated prompt engineering and manual revalidation</span>
-              </li>
-            </ul>
-          </div>
-          <div className="p-10 md:p-16 bg-black text-white space-y-8">
-            <h3 className="text-xl font-semibold">OpenOutcomesResearch</h3>
-            <ul className="space-y-6">
-              <li className="flex gap-4">
-                <Check className="w-6 h-6 shrink-0 text-white/60" />
-                   <span>Structured study-level outputs for analysis, review, and downstream reuse</span>
-              </li>
-              <li className="flex gap-4">
-                <Check className="w-6 h-6 shrink-0 text-white/60" />
-                   <span>Every extracted field linked directly to source context</span>
-              </li>
-              <li className="flex gap-4">
-                <Check className="w-6 h-6 shrink-0 text-white/60" />
-                   <span>Designed to surface underreported areas, inconsistencies, and blind spots</span>
-              </li>
-              <li className="flex gap-4">
-                <Check className="w-6 h-6 shrink-0 text-white/60" />
-                   <span>Purpose-built for evidence workflows in health economics and outcomes research (HEOR), contract research organizations (CROs), pharma, and academic research</span>
-              </li>
-            </ul>
-          </div>
+        <div className="text-lg text-black/70 leading-relaxed space-y-4">
+          <p>
+            Most literature tools help teams find papers or manage reviews. Most AI tools summarize documents.
+          </p>
+          <p>
+            OpenOutcomesResearch is different because it turns scientific literature and research databases into structured data analytics.
+          </p>
+          <p>
+            The goal is not just to read faster. The goal is to make evidence usable as data.
+          </p>
         </div>
+      </div>
+
+      <div className="grid md:grid-cols-2 gap-6">
+        <div className="p-8 rounded-3xl border border-black/10 bg-white shadow-sm space-y-5">
+          <h3 className="font-semibold text-lg text-black">Generic AI tools summarize papers.</h3>
+          <p className="text-black/60 leading-relaxed">OpenOutcomesResearch turns papers into structured evidence data.</p>
+        </div>
+        <div className="p-8 rounded-3xl border border-black/10 bg-white shadow-sm space-y-5">
+          <h3 className="font-semibold text-lg text-black">Traditional review tools manage workflows.</h3>
+          <p className="text-black/60 leading-relaxed">OpenOutcomesResearch helps create reusable datasets and analytics.</p>
+        </div>
+        <div className="p-8 rounded-3xl border border-black/10 bg-white shadow-sm space-y-5">
+          <h3 className="font-semibold text-lg text-black">Spreadsheets organize one project.</h3>
+          <p className="text-black/60 leading-relaxed">OpenOutcomesResearch helps build an evidence layer that can be searched, analyzed, updated, and reused.</p>
+        </div>
+        <div className="p-8 rounded-3xl border border-black/10 bg-white shadow-sm space-y-5">
+          <h3 className="font-semibold text-lg text-black">Dashboards show what is happening.</h3>
+          <p className="text-black/60 leading-relaxed">OpenOutcomesResearch helps explain why it is happening by linking insights back to the evidence.</p>
+        </div>
+      </div>
+
+      <div className="p-8 rounded-3xl bg-black text-white shadow-sm">
+        <p className="text-lg font-medium">A chatbot gives you an answer. OpenOutcomesResearch helps build the evidence dataset behind the answer.</p>
       </div>
     </section>
   );
