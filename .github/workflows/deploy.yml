@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - investor
   workflow_dispatch:
 
 env:
@@ -45,7 +46,10 @@ jobs:
         env:
           # Set this in your GitHub repository secrets if you have the URL ready
           VITE_GOOGLE_SHEETS_URL: ${{ secrets.VITE_GOOGLE_SHEETS_URL }}
-          VITE_BASE_PATH: ${{ steps.pages.outputs.base_path }}/
+          VITE_BASE_PATH: /
+
+      - name: Include CNAME in Pages artifact
+        run: cp CNAME dist/CNAME
           
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
