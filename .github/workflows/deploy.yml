@@ -46,12 +46,16 @@ jobs:
         env:
           # Set this in your GitHub repository secrets if you have the URL ready
           VITE_GOOGLE_SHEETS_URL: ${{ secrets.VITE_GOOGLE_SHEETS_URL }}
-          VITE_BASE_PATH: /
+          # Default to custom-domain-safe root path, but allow overrides via repository variable.
+          VITE_BASE_PATH: ${{ vars.VITE_BASE_PATH || '/' }}
 
       - name: Include CNAME in Pages artifact
         run: |
           if [ -f CNAME ]; then
+            echo "Found CNAME in repository root; copying into dist/"
             cp CNAME dist/CNAME
+          else
+            echo "No CNAME file found in repository root; continuing without copying."
           fi
           
       - name: Upload artifact
