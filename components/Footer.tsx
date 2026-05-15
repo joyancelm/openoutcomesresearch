@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export const Footer: React.FC = () => {
   const scrollToSection = (sectionId: string) => {
@@ -7,6 +8,8 @@ export const Footer: React.FC = () => {
       target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   };
+
+  const navigate = useNavigate();
 
   return (
     <footer className="border-t border-black/10 bg-white py-12">
@@ -21,6 +24,7 @@ export const Footer: React.FC = () => {
           <button type="button" onClick={() => scrollToSection('platform')} className="text-left hover:text-black transition-colors">Platform</button>
           <button type="button" onClick={() => scrollToSection('data-sources')} className="text-left hover:text-black transition-colors">Data Sources</button>
           <button type="button" onClick={() => scrollToSection('how-it-works')} className="text-left hover:text-black transition-colors">How It Works</button>
+          <button type="button" onClick={() => navigate('/about')} className="text-left hover:text-black transition-colors">About</button>
           <button type="button" onClick={() => scrollToSection('use-cases')} className="text-left hover:text-black transition-colors">Use Cases</button>
           <button type="button" onClick={() => scrollToSection('demo')} className="text-left hover:text-black transition-colors">Demo</button>
           <button type="button" onClick={() => scrollToSection('early-access')} className="text-left hover:text-black transition-colors">Join Beta</button>

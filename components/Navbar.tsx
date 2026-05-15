@@ -42,6 +42,7 @@ export const Navbar: React.FC = () => {
             <button type="button" onClick={() => goToSection('platform')} className="text-sm font-medium text-black/60 hover:text-black transition-colors">Platform</button>
             <button type="button" onClick={() => goToSection('features')} className="text-sm font-medium text-black/60 hover:text-black transition-colors">Features</button>
             <button type="button" onClick={() => goToSection('how-it-works')} className="text-sm font-medium text-black/60 hover:text-black transition-colors">How It Works</button>
+            <button type="button" onClick={() => navigate('/about')} className="text-sm font-medium text-black/60 hover:text-black transition-colors">About</button>
             <button type="button" onClick={() => goToSection('use-cases')} className="text-sm font-medium text-black/60 hover:text-black transition-colors">Use Cases</button>
             <button type="button" onClick={() => goToSection('demo')} className="text-sm font-medium text-black/60 hover:text-black transition-colors">Demo</button>
             <button type="button" onClick={() => goToSection('early-access')} className="text-sm font-medium text-black/60 hover:text-black transition-colors">Join Beta</button>

@@ -7,10 +7,11 @@ export const AboutUs: React.FC = () => {
       {/* Hero Section */}
       <section className="space-y-6 text-center max-w-3xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-medium tracking-tight">
-          Built by clinicians, for clinicians: The AI Research Platform for HEOR
+          Built by clinicians, for clinicians: 
+           AI infrastructure for literature review and data analytics
         </h1>
         <p className="text-xl text-black/70 leading-relaxed">
-          We are on a mission to bring ethical, transparent, and rigorous AI and data analytics to the forefront of Health Economics and Outcomes Research (HEOR), medical research, and evidence synthesis.
+          We are on a mission to bring ethical, transparent, and rigorous AI and data analytics to clinical research and evidence synthesis.
         </p>
       </section>
 
@@ -56,7 +57,7 @@ export const AboutUs: React.FC = () => {
             We understand the workflow because we've lived it.
           </h2>
           <p className="text-lg text-black/70 leading-relaxed">
-            OpenOutcomesResearch wasn't built by tech founders looking for a problem. It was built by clinicians, HEOR experts, and researchers who experienced the pain of manual evidence synthesis and data analytics firsthand. We know what it takes to conduct a rigorous systematic review, and we've designed our platform to enhance—not replace—the critical thinking of domain experts.
+            OpenOutcomesResearch wasn't built by tech founders looking for a problem. It was built by clinicians, clinical researchers, and engineers who experienced the pain of manual evidence synthesis and data analytics firsthand. We know what it takes to conduct a rigorous systematic review, and we've designed our platform to enhance—not replace—the critical thinking of domain experts.
           </p>
           <ul className="space-y-4 pt-4">
             <li className="flex items-start gap-3 text-black/70">
