@@ -52,7 +52,8 @@ jobs:
           elif [ "$GITHUB_REF_NAME" = "investor" ]; then
             BASE_PATH="/"
           else
-            BASE_PATH="$PAGES_BASE_PATH/"
+            NORMALIZED_PAGES_BASE_PATH="${PAGES_BASE_PATH%/}"
+            BASE_PATH="$NORMALIZED_PAGES_BASE_PATH/"
           fi
 
           echo "Using VITE_BASE_PATH=$BASE_PATH"
@@ -71,7 +72,7 @@ jobs:
             echo "Found CNAME in repository root; copying into dist/"
             cp CNAME dist/CNAME
           else
-            echo "No CNAME file found; skipping custom domain configuration (expected for standard GitHub Pages deployments)."
+            echo "No CNAME file found; skipping (standard GitHub Pages deployment)."
           fi
           
       - name: Upload artifact
