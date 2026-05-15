@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - investor
   workflow_dispatch:
 
 env:
@@ -39,13 +40,40 @@ jobs:
           
       - name: Install dependencies
         run: npm ci
+
+      - name: Resolve Vite base path
+        id: vite_base
+        env:
+          CUSTOM_VITE_BASE_PATH: ${{ vars.VITE_BASE_PATH }}
+          PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+        run: |
+          if [ -n "$CUSTOM_VITE_BASE_PATH" ]; then
+            BASE_PATH="$CUSTOM_VITE_BASE_PATH"
+          elif [ "$GITHUB_REF_NAME" = "investor" ]; then
+            BASE_PATH="/"
+          else
+            NORMALIZED_PAGES_BASE_PATH="${PAGES_BASE_PATH%/}"
+            BASE_PATH="$NORMALIZED_PAGES_BASE_PATH/"
+          fi
+
+          echo "Using VITE_BASE_PATH=$BASE_PATH"
+          echo "value=$BASE_PATH" >> "$GITHUB_OUTPUT"
         
       - name: Build
         run: npm run build
         env:
           # Set this in your GitHub repository secrets if you have the URL ready
           VITE_GOOGLE_SHEETS_URL: ${{ secrets.VITE_GOOGLE_SHEETS_URL }}
-          VITE_BASE_PATH: ${{ steps.pages.outputs.base_path }}/
+          VITE_BASE_PATH: ${{ steps.vite_base.outputs.value }}
+
+      - name: Include CNAME in Pages artifact
+        run: |
+          if [ -f CNAME ]; then
+            echo "Found CNAME in repository root; copying into dist/"
+            cp CNAME dist/CNAME
+          else
+            echo "No CNAME file found; skipping (standard GitHub Pages deployment)."
+          fi
           
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
